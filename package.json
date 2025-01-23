@@ -1,0 +1,17 @@
+{
+    "name": "@elizaos/plugin-edwin",
+    "version": "0.0.1",
+    "description": "Edwin plugin for elizaOS agent",
+    "main": "dist/index.js",
+    "type": "module",
+    "types": "dist/index.d.ts",
+    "dependencies": {
+        "@elizaos/core": "workspace:*",
+        "edwin-sdk": "^0.0.1",
+        "tsup": "8.3.5"
+    },
+    "scripts": {
+        "build": "tsup --format esm --dts",
+        "dev": "tsup --format esm --dts --watch"
+    }
+}
